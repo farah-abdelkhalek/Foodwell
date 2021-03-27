@@ -1,21 +1,21 @@
 import React from 'react';
-import {createStackNavigator} from "@react-navigation/stack";
 import {NavigationContainer} from "@react-navigation/native";
+import {StackNavigator} from "@react-navigation/stack/src/navigators/createStackNavigator";
 import {Loadingscreen} from "./screens/Loadingscreen";
-import StackNavigator from "@react-navigation/stack/src/navigators/createStackNavigator";
+import {View} from "react-native";
 
-const Stack = createStackNavigator ();
 
-const App = () => {
+export function App  ()  {
     return (
         <NavigationContainer>
-            <StackNavigator
-                screenOptions={{
-                    headerShown : false
-                }}/>
-            <View>Loadingscreen</View>
+            <View>
+                <StackNavigator
+                    screenOptions={{
+                        headerShown: false
+                    }}/>
+                <View Lockscreen/>
+            </View>
         </NavigationContainer>
     )
 }
 
-export default App
