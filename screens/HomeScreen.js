@@ -1,6 +1,6 @@
 import React from "react";
 import {FlatList, Image, SafeAreaView, StyleSheet, Text, TouchableOpacity, View} from "react-native";
-import {COLORS, FONTS, images, SIZES} from "../../tash/Foodwell/components/constants";
+import {COLORS, FONTS, images, SIZES} from "../../components/theme";
 
 
 export default function HomeScreen() {

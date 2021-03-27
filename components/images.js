@@ -1,4 +1,4 @@
-export const logo = require("../../assets/images/logo.png");
+export const logo = (require="../../assets/images/logo.png");
 export const foodcoinwhite = (require = "../../assets/images/Food-coin-blanc (1).png");
 export const foodcoingreen = (require = "../../assets/images/food coins.png");
 export const addbutton = (require ="../../assets/images/addbutton.png");

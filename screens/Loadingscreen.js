@@ -1,10 +1,7 @@
 import React from "react";
 import { Image, StyleSheet, View} from "react-native";
-import {images} from "../../tash/Foodwell/components/constants/images";
-import AppLoading from 'expo-app-loading';
-import {Loadingfont} from "../../tash/Foodwell/components/constants/theme";
-import {COLORS} from "../../tash/Foodwell/components/constants";
-
+import {images} from "../components/images";
+import {COLORS} from "../components";
 
 export default function Loadingscreen () {
 
@@ -26,7 +23,7 @@ export default function Loadingscreen () {
 const styles = StyleSheet.create({
     background: {
         flex: 1,
-        backgroundColor: 'transparent',
+        backgroundColor: COLORS.white,
         justifyContent: "center",
         alignItems: "center",
     }

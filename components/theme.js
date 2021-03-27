@@ -1,8 +1,6 @@
 import { Dimensions } from "react-native";
-import { useFonts, ABeeZee } from '@expo-google-fonts/inter';
 const { width, height } = Dimensions.get("window");
-import AppLoading from 'expo-app-loading';
-
+import Loadingfont from "../assets/fonts/fonts";
 
 export const COLORS = {
     // base colors
@@ -49,15 +47,7 @@ export const SIZES = {
     height
 };
 
-export function Loadingfont (){
-    [fontsLoaded] = useFonts({
-        ABeeZee,
-    })
 
-    if (!fontsLoaded) {
-        return <AppLoading />;
-    }
-}
 export const FONTS = {
     largeTitle: { fontFamily:"ABeeZee", fontSize: SIZES.largeTitle, lineHeight: 44},
     h1: { fontFamily:"ABeeZee", fontSize: SIZES.h1, lineHeight: 36},
