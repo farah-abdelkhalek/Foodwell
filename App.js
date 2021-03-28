@@ -5,7 +5,7 @@ import {Loadingscreen} from "./screens/Loadingscreen";
 import {View} from "react-native";
 
 
-export function App  ()  {
+const App = () => {
     return (
         <NavigationContainer>
             <View>
@@ -13,9 +13,10 @@ export function App  ()  {
                     screenOptions={{
                         headerShown: false
                     }}/>
-                <View Lockscreen/>
+                <View>Loadingscreen</View>
             </View>
         </NavigationContainer>
     )
 }
 
+export default App;
