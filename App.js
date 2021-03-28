@@ -1,22 +1,22 @@
 import React from 'react';
 import {NavigationContainer} from "@react-navigation/native";
-import {StackNavigator} from "@react-navigation/stack/src/navigators/createStackNavigator";
+import {createStackNavigator} from "@react-navigation/stack";
 import {Loadingscreen} from "./screens/Loadingscreen";
-import {View} from "react-native";
 
+
+const AppStack = createStackNavigator();
 
 const App = () => {
     return (
         <NavigationContainer>
-            <View>
-                <StackNavigator
+            <AppStack.navigator
                     screenOptions={{
                         headerShown: false
-                    }}/>
-                <View>Loadingscreen</View>
-            </View>
+                    }}>
+                <AppStack.Screen name ="Loadingscreen" component ={Loadingscreen} />
+            </AppStack.navigator>
         </NavigationContainer>
-    )
-}
+    );
+};
 
 export default App;
