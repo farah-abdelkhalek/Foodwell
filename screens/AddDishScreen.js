@@ -1,5 +1,6 @@
 import React from "react";
 import {View, Text, TouchableOpacity, Image, SafeAreaView} from "react-native";
+
 import {COLORS, FONTS, images, SIZES} from "../../tash/Foodwell/components/constants";
 
 export default function AddDishScreen ()  {

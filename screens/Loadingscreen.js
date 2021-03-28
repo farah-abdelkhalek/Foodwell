@@ -1,6 +1,7 @@
 import React from "react";
 import { Image, StyleSheet, View} from "react-native";
-import {images} from "../components/images";
+
+import images from "../components/images";
 import {COLORS} from "../components";
 
 export default function Loadingscreen () {
@@ -21,7 +22,7 @@ export default function Loadingscreen () {
 }
 
 const styles = StyleSheet.create({
-    background: {
+    container: {
         flex: 1,
         backgroundColor: COLORS.white,
         justifyContent: "center",
