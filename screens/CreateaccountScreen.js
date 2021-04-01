@@ -1,10 +1,11 @@
 import React , {Component} from "react";
 import {Button, Image, ImageBackground, StyleSheet, Text, TextInput, TouchableOpacity, View, } from "react-native";
-import {COLORS, FONTS, images, SIZES} from "../../tash/Foodwell/components/constants";
+import {colors, FONTS, images, SIZES} from "../components";
+import Screen from "../components/Screen";
 
 export default function Creataccount () {
     return (
-        <View style ={style.maincontainer}>
+        <Screen style ={styles.maincontainer}>
             <View style ={{flexDirection: 'row'}}>
                 <Text style ={...FONTS.h3}>Create account</Text>
             </View>
@@ -30,7 +31,7 @@ export default function Creataccount () {
                 <TextInput style={FONTS.h3}>"Password"</TextInput>
             </View>
 
-        </View>
+        </Screen>
 
     );
 }

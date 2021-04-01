@@ -1,8 +1,6 @@
 import { Dimensions } from "react-native";
 const { width, height } = Dimensions.get("window");
 
-import Loadingfont from "../assets/fonts/fonts";
-
 export const COLORS = {
     // base colors
     primary:"#3b987e",
