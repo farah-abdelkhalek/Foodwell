@@ -1,5 +1,7 @@
 import React from "react";
 import { View, Text, TouchableOpacity, Image, SafeAreaView, StyleSheet } from "react-native";
+
+
 import { colors, FONTS, images, SIZES } from "../components";
 
 export default function PaymentScreen() {

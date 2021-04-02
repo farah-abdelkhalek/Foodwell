@@ -1,9 +1,7 @@
 import React, { useEffect } from "react";
 import { Image, StyleSheet, View } from "react-native";
 
-import { logo } from "../components/images"; // this
-import * as images from "../components/images"; // or this
-// import image from "../components";
+import * as images from "../components/images";
 import { colors } from "../components";
 import * as Font from "expo-font";
 import Screen from "../components/Screen";

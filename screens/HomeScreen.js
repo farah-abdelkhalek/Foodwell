@@ -1,5 +1,6 @@
 import React from "react";
 import { Image, SafeAreaView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+
 import { colors, FONTS, images, SIZES } from "../components";
 import Screen from "../components/Screen";
 
