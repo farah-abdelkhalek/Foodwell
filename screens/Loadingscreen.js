@@ -1,32 +1,42 @@
-import React from "react";
-import { Image, StyleSheet, View} from "react-native";
+import React, { useEffect } from "react";
+import { Image, StyleSheet, View } from "react-native";
 
-import images from "../components/images";
-import {COLORS} from "../components";
+import { logo } from "../components/images"; // this
+import * as images from "../components/images"; // or this
+// import image from "../components";
+import { colors } from "../components";
+import * as Font from "expo-font";
+import Screen from "../components/Screen";
 
-export default function Loadingscreen () {
+function Loadingscreen() {
+    useEffect(() => {
+        async function loadFonts() {
+            await Font.loadAsync({
+                ABeeZee: require("../assets/fonts/ABeeZee/ABeeZee-Regular.ttf"),
+                "ABeeZee-Italic": require("../assets/fonts/ABeeZee/ABeeZee-Italic.ttf"),
+            });
+        }
+        loadFonts();
+    }, []);
 
     return (
-        <View style={styles.container}>
-            <Image
-                source={images.logo}
-                resizeMode="contain"
-                style={{
-                    width: 30,
-                    height: 30
-                }}
-            />
-        </View>
+        <Screen style={styles.container}>
+            <Image source={images.logo} style={styles.image} />
+        </Screen>
     );
-
 }
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        backgroundColor: COLORS.white,
+        backgroundColor: colors.white,
         justifyContent: "center",
         alignItems: "center",
-    }
+    },
+    image: {
+        resizeMode: "contain",
+        width: 300,
+        height: 300,
+    },
+});
 
-})
+export default Loadingscreen;

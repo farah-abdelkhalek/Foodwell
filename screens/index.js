@@ -1,27 +1,12 @@
-import Loadingscreen from './Loadingscreen';
-import MenuScreen from './MenuScreen';
-import HomeScreen from './HomeScreen';
-import SignupScreen from "./SignupScreen";
-import SigninScreen from "./SigninScreen";
-import AddDishScreen from "./AddDishScreen";
-import PaymentScreen from "./PaymentScreen";
-import ProfileScreen from "./ProfileScreen";
-import Categories from "./CategorieScreen";
-import FoodcoinsScreen from "./FoodcoinsScreen";
-import FoodMapScreen from "./FoodMapScreen";
-import OrderDeliveryScreen from "./OrderDeliveryScreen";
-
-export {
-    Loadingscreen,
-    MenuScreen,
-    HomeScreen,
-    SignupScreen,
-    SigninScreen,
-    AddDishScreen,
-    PaymentScreen,
-    ProfileScreen,
-    Categories,
-    FoodcoinsScreen,
-    FoodMapScreen,
-    OrderDeliveryScreen,
-}
+export { default as Loadingscreen } from "./Loadingscreen";
+export { default as MenuScreen } from "./MenuScreen";
+export { default as HomeScreen } from "./HomeScreen";
+export { default as SignupScreen } from "./SignupScreen";
+export { default as SigninScreen } from "./SigninScreen";
+export { default as AddDishScreen } from "./AddDishScreen";
+export { default as PaymentScreen } from "./PaymentScreen";
+export { default as ProfileScreen } from "./ProfileScreen";
+export { default as Categories } from "./CategorieScreen";
+export { default as FoodcoinsScreen } from "./FoodcoinsScreen";
+export { default as FoodMapScreen } from "./FoodMapScreen";
+export { default as OrderDeliveryScreen } from "./OrderDeliveryScreen";
