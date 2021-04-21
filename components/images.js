@@ -16,7 +16,7 @@ export const loupe = require ('../assets/images/loupe.png');
 export const rightarrow = require ('../assets/images/Right arrow.png');
 export const location = require ('../assets/images/Location.png');
 export const logoless = require ('../assets/images/logoless.png');
-export const salad = require ('../assers/images/salad.png');
+export const salad = require ('../assets/images/salad.png');
 
 export default {
     addbutton,

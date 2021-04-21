@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, TouchableOpacity, Image, SafeAreaView, StyleSheet } from "react-native";
 
 
-import { colors, FONTS, images, SIZES } from "../components";
+import { COLORS, FONTS, images, SIZES } from "../components";
 
 export default function PaymentScreen() {
     function renderHeader() {
@@ -26,7 +26,7 @@ export default function PaymentScreen() {
                         style={{
                             width: "70%",
                             height: "100%",
-                            backgroundColor: colors.white,
+                            backgroundColor: COLORS.white,
                             alignItems: "center",
                             justifyContent: "center",
                             borderRadius: SIZES.radius,
@@ -46,20 +46,20 @@ export default function PaymentScreen() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: colors.white,
+        backgroundColor: COLORS.white,
         alignItems: "center",
         justifyContent: "center",
     },
     appButtonContainer: {
         elevation: 8,
-        backgroundColor: colors.primary,
+        backgroundColor: COLORS.primary,
         borderRadius: 10,
         paddingVertical: 10,
         paddingHorizontal: 12,
     },
     appButtonText: {
         fontSize: 18,
-        color: colors.white,
+        color: COLORS.white,
         alignSelf: "center",
         textTransform: "uppercase",
     },

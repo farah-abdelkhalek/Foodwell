@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, TouchableOpacity, Image } from "react-native";
-import { colors, FONTS, images, SIZES } from "../components";
+import { COLORS, FONTS, images, SIZES } from "../components";
 import Screen from "../components/Screen";
 
 export default function Signin() {
@@ -25,7 +25,7 @@ export default function Signin() {
                     style={{
                         width: "70%",
                         height: "100%",
-                        backgroundColor: colors.white,
+                        backgroundColor: COLORS.white,
                         alignItems: "center",
                         justifyContent: "center",
                         borderRadius: SIZES.radius,

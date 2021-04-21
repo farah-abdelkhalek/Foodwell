@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Image, StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-native";
 
-import { colors, FONTS, images } from "../components";
+import { COLORS, FONTS, images } from "../components";
 
 export default function SigninScreen() {
     return (
@@ -42,7 +42,7 @@ export default function SigninScreen() {
             </View>
             <View>
                 <TouchableOpacity onPress={() => {}} style={FONTS.h3}>
-                    <Text style={colors.primary}>{"Create account"}</Text>
+                    <Text style={COLORS.primary}>{"Create account"}</Text>
                 </TouchableOpacity>
             </View>
         </View>
@@ -52,11 +52,11 @@ export default function SigninScreen() {
 const styles = StyleSheet.create({
     maincontainer: {
         flex: 1,
-        backgroundColor: colors.white,
+        backgroundColor: COLORS.white,
     },
     container: {
         flex: 1,
-        backgroundColor: colors.white,
+        backgroundColor: COLORS.white,
         borderRadius: 25,
         height : 31,
         alignItems: "center",
@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
     },
     appButtonContainer: {
         elevation: 8,
-        backgroundColor: colors.primary,
+        backgroundColor: COLORS.primary,
         borderRadius: 10,
         height : 31,
         paddingVertical: 10,
@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
     },
     appButtonText: {
         fontSize: 18,
-        color: colors.white,
+        color: COLORS.white,
         fontWeight: "bold",
         alignSelf: "center",
         textTransform: "uppercase",

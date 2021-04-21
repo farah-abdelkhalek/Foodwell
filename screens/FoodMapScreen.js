@@ -1,5 +1,6 @@
 import * as images from "../components/images";
 import Screen from "../components/Screen";
+import {COLORS} from "../components";
 
 export default function FoodMapScreen() {
     //find way to insert a map for free
@@ -23,7 +24,7 @@ export default function FoodMapScreen() {
                     style={{
                         width: "70%",
                         height: "100%",
-                        backgroundColor: colors.white,
+                        backgroundColor: COLORS.white,
                         alignItems: "center",
                         justifyContent: "center",
                         borderRadius: SIZES.radius,

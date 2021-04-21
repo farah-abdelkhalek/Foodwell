@@ -1,7 +1,7 @@
 import React from "react";
 import { Image, SafeAreaView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
-import { colors, FONTS, images, SIZES } from "../components";
+import { COLORS, FONTS, images, SIZES } from "../components";
 import Screen from "../components/Screen";
 
 export default function HomeScreen() {
@@ -21,11 +21,11 @@ export default function HomeScreen() {
             </TouchableOpacity>
 
             <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-                <View
+                <View>
                     style={{
                         width: "70%",
                         height: "100%",
-                        backgroundColor: colors.white,
+                        backgroundColor: COLORS.white,
                         alignItems: "center",
                         justifyContent: "center",
                         borderRadius: SIZES.radius,
@@ -53,7 +53,7 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: colors.primarybis,
+        backgroundColor: COLORS.primarybis,
     },
     shadow: {
         shadowColor: "#0000",

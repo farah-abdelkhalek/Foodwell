@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, TouchableOpacity, Image, SafeAreaView } from "react-native";
 
-import { colors, FONTS, images, SIZES } from "../components";
+import {COLORS, FONTS, images, SIZES} from "../components";
 import Screen from "../components/Screen";
 
 export default function FoodcoinsScreen() {
@@ -26,7 +26,7 @@ export default function FoodcoinsScreen() {
                         style={{
                             width: "70%",
                             height: "100%",
-                            backgroundColor: colors.white,
+                            backgroundColor: COLORS.white,
                             alignItems: "center",
                             justifyContent: "center",
                             borderRadius: SIZES.radius,

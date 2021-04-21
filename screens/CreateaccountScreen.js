@@ -1,7 +1,7 @@
 import React , {Component} from "react";
 import {Button, Image, ImageBackground, StyleSheet, Text, TextInput, TouchableOpacity, View, } from "react-native";
 
-import {colors, FONTS, images, SIZES} from "../components";
+import {COLORS, FONTS, images, SIZES} from "../components";
 import Screen from "../components/Screen";
 
 export default function Creataccount () {

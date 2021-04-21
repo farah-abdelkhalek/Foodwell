@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Image, StyleSheet, View } from "react-native";
 
 import * as images from "../components/images";
-import { colors } from "../components";
+import {COLORS} from "../components";
 import * as Font from "expo-font";
 import Screen from "../components/Screen";
 
@@ -26,7 +26,7 @@ function Loadingscreen() {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: colors.white,
+        backgroundColor: COLORS.white,
         justifyContent: "center",
         alignItems: "center",
     },

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Image, StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-native";
 
-import { colors, FONTS, images } from "../components";
+import { COLORS, FONTS, images } from "../components";
 import Screen from "../components/Screen";
 
 export default function SignupScreen() {
@@ -48,16 +48,16 @@ export default function SignupScreen() {
 const styles = StyleSheet.create({
     maincontainer: {
         flex: 1,
-        backgroundColor: colors.white,
+        backgroundColor: COLORS.white,
     },
     container: {
         flex: 1,
-        backgroundColor: colors.white,
+        backgroundColor: COLORS.white,
         alignItems: "center",
         justifyContent: "center",
     },
     appButtonText: {
-        color: colors.primary,
+        color: COLORS.primary,
         alignItems: "flex-end",
         justifyContent: "flex-end",
     },

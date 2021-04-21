@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, TouchableOpacity, Image, SafeAreaView, ScrollView } from "react-native";
 import * as images from "../components/images";
-import { colors, FONTS, SIZES } from "../components";
+import {COLORS, FONTS, SIZES} from "../components";
 import Screen from "../components/Screen";
 
 function AddDishScreen() {
@@ -26,7 +26,7 @@ function AddDishScreen() {
                         style={{
                             width: "70%",
                             height: "100%",
-                            backgroundColor: colors.white,
+                            backgroundColor: COLORS.white,
                             alignItems: "center",
                             justifyContent: "center",
                             borderRadius: SIZES.radius,
