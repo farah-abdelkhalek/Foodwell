@@ -1,11 +1,12 @@
 import React, { Component } from "react";
-import { Image, StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-native";
+import { Image, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-native";
 
 import { COLORS, FONTS, images } from "../components";
+import Screen from "../components/Screen";
 
 export default function SigninScreen() {
     return (
-        <View style={styles.maincontainer}>
+        <Screen style={styles.maincontainer}>
             <View style={styles.container}>
                 <Image
                     source={images.logoless}
@@ -13,26 +14,24 @@ export default function SigninScreen() {
                     style={{
                         backgroundColor: "transparent",
                         alignItems: "center",
-                        width: 200,
-                        height: 220,
-                        justifyContent: "center",
+                        width: 700,
+                        height: 700,
                     }}
                 />
             </View>
             <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-                <Text style={{ ...FONTS.h3 }}>Sign in</Text>
+                <Text style={{ ...FONTS.h2 }}>Sign in</Text>
             </View>
             <View style={styles.container}>
-                <Text style={FONTS.h3}>email</Text>
-                <TextInput style={FONTS.h3} keyboardType="email-address">
+                <Text style={FONTS.h4}>email</Text>
+                <TextInput style={FONTS.h4} keyboardType="email-address">
                     placeholder : {"prenom.nom@eleve.isep.fr"}
                 </TextInput>
             </View>
             <View style={styles.container}>
-                <Text style={FONTS.h3}>Password</Text>
-                <TextInput style={FONTS.h3} keyboardType="Password">
-                    placeholder : {"Password"}
-                    secureTextEntry : {true}
+                <Text style={FONTS.h4}>password</Text>
+                <TextInput style={FONTS.h4} keyboardType="Password">
+                    placeholder='prenom.nom@eleve.isep.fr'
                 </TextInput>
             </View>
             <View>
@@ -45,7 +44,7 @@ export default function SigninScreen() {
                     <Text style={COLORS.primary}>{"Create account"}</Text>
                 </TouchableOpacity>
             </View>
-        </View>
+        </Screen>
     );
 }
 
@@ -53,9 +52,11 @@ const styles = StyleSheet.create({
     maincontainer: {
         flex: 1,
         backgroundColor: COLORS.white,
+        justifyContent: "center",
+        borderTopWidth : 110,
     },
     container: {
-        flex: 1,
+        flex : 1,
         backgroundColor: COLORS.white,
         borderRadius: 25,
         height : 31,
@@ -63,6 +64,7 @@ const styles = StyleSheet.create({
         justifyContent: "center",
     },
     appButtonContainer: {
+        flex : 3,
         elevation: 8,
         backgroundColor: COLORS.primary,
         borderRadius: 10,

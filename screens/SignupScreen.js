@@ -8,7 +8,7 @@ export default function SignupScreen() {
     return (
         <Screen style={styles.maincontainer}>
             <View style={styles.container}>
-                <Text style={FONTS.h3}>Create account</Text>
+                <Text style={FONTS.h2}>Create account</Text>
             </View>
 
             <View style={styles.container}>
@@ -18,8 +18,8 @@ export default function SignupScreen() {
                     style={{
                         backgroundColor: "transparent",
                         alignItems: "center",
-                        width: 200,
-                        height: 220,
+                        width: 700,
+                        height: 700,
                         justifyContent: "center",
                     }}
                 />
@@ -27,18 +27,18 @@ export default function SignupScreen() {
 
             <View style={styles.container}>
                 <Text style={FONTS.h3}>email</Text>
-                <TextInput style={FONTS.h3} keyboardType="email-address">
+                <TextInput style={FONTS.h4} keyboardType="email-address">
                     "email@eleve.isep.fr"
                 </TextInput>
             </View>
             <View style={styles.container}>
                 <Text style={FONTS.h3}>Password</Text>
-                <TextInput style={FONTS.h3}>"Password"</TextInput>
+                <TextInput style={FONTS.h4}>"Password"</TextInput>
             </View>
 
             <View>
                 <TouchableOpacity onPress={() => {}}>
-                    <Text style={FONTS.h4}>{"Next"}</Text>
+                    <Text style={FONTS.h3}>{"Next"}</Text>
                 </TouchableOpacity>
             </View>
         </Screen>
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
     },
     appButtonText: {
         color: COLORS.primary,
-        alignItems: "flex-end",
-        justifyContent: "flex-end",
+        alignItems: "center",
+        justifyContent: "center",
     },
 });
